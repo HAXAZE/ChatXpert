@@ -6,6 +6,7 @@ import seaborn as sns
 
 
 st.sidebar.title("ChatXpert Analyzer")
+st.markdown("Coded With 💙 by Sahil!")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
