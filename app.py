@@ -6,7 +6,22 @@ import seaborn as sns
 
 
 st.sidebar.title("ChatXpert Analyzer")
-st.markdown("Coded With 💙 by Sahil!")
+st.header("Coded With 💙 by Sahil!")
+st.write("1. Hover over the left side menu.")
+st.write("2. Open Your WhatsApp and select the desired chat..")
+st.write("3. Click on the More Options menu within the selected chat.")
+st.write("4. Choose the Export Chat option to export the chat history.")
+st.write("5. Upload the exported chat file using the file uploader provided.")
+st.write("6. The analysis results will be generated and displayed below. ⬇️")
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
